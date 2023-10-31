@@ -1,3 +1,11 @@
+console.log('Hello, world!');
+node_modules/
+package-lock.json
+{
+  "name": "simple",
+  "main": "app.js"
+}
+
 name: Node Continuous Integration
 on: push
 jobs:
