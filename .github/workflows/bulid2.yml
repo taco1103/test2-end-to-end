@@ -1,34 +1,7 @@
-console.log('Hello, world!');
-node_modules/
-package-lock.json
-{
-  "name": "simple",
-  "main": "app.js"
-}
-
-name: Node Continuous Integration
 on: push
 jobs:
-  build-node:
-    name: Build Node
+  first-job:
     runs-on: ubuntu-latest
-    container: node:14
     steps:
       - run: node --version
-        name: Check Node Version
       - run: npm --version
-        name: Check NPM Version
-      - uses: actions/checkout@v2
-        name: Checkout Code
-      - run: npm install
-        name: Install NPM Packages
-      - run: node app.js
-        name: Run Application
-        
-npm install --save moment
-
-console.log('Hello, world!');
-
-var moment = require('moment');
-var date = moment().format('LL');
-console.log(date);
