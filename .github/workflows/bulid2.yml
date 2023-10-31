@@ -24,3 +24,11 @@ jobs:
         name: Install NPM Packages
       - run: node app.js
         name: Run Application
+        
+npm install --save moment
+
+console.log('Hello, world!');
+
+var moment = require('moment');
+var date = moment().format('LL');
+console.log(date);
