@@ -1,0 +1,13 @@
+name: Node Continuous Integration
+on: push
+jobs:
+  build-node:
+    name: Build Node
+    runs-on: ubuntu-latest
+    container: node:14
+    steps:
+      - run: node --version
+      - run: npm --version
+      - uses: actions/checkout@v2
+      - run: npm install
+      - run: node app.js
